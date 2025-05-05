@@ -1,8 +1,12 @@
-# Multiscale Diffusion Model for Image Synthesis
+# Pyramid Hierarchical Masked Diffusion Model for Imaging Synthesis
 
-# Multiscale Diffusion and Autoencoder Model
+# Pyramid Hierarchical Masked Diffusion Model for Imaging Synthesis
 
-This repository contains an implementation of a multiscale diffusion model combined with an autoencoder for image synthesis. The model leverages diffusion processes across multiple scales and integrates an autoencoder architecture to enhance the quality of generated images.
+The paper presents a novel image synthesis network, the Pyramid Hierarchical Masked Diffusion Model (PHMDiff), which employs a multi-scale hierarchical approach for more detailed control over synthesizing high-quality images across different resolutions and layers. Specifically, this model utilizes randomly multi-scale high-proportion masks to speed up diffusion model training, and balances detail fidelity and overall structure. The integration of a Transformer-based Diffusion model process incorporates cross-granularity regularization, modeling the mutual information consistency across each granularity's latent spaces, thereby enhancing pixel-level perceptual accuracy. Comprehensive experiments on two challenging datasets demonstrate that PHMDiff achieves superior performance in both the Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index Measure (SSIM), highlighting its capability to produce high-quality synthesized images with excellent structural integrity. Ablation studies further confirm the contributions of each component.
+
+![Method](https://github.com/user-attachments/assets/c38202cf-5fb8-4781-8385-8b0669dc32b8)
+
+
 
 ## Project Structure
 
